@@ -1,0 +1,14 @@
+{
+  "name": "homework4",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare": "husky",
+    "contracts:precommit": "node scripts/contracts/precommit.js",
+    "layout:precommit": "node scripts/frontend-layout-check.js",
+    "precommit": "npm run contracts:precommit && npm run layout:precommit"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7"
+  }
+}
